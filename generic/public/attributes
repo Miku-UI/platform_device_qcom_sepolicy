@@ -24,12 +24,10 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
-# Changes from Qualcomm Innovation Center are provided under the following license:
-#
-# Copyright (c) 2022-2024 Qualcomm Innovation Center, Inc. All rights reserved.
+
+# Changes from Qualcomm Technologies, Inc. are provided under the following license:
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
-#
 
 attribute vendor_hal_hbtp;
 attribute vendor_hal_hbtp_client;
@@ -182,6 +180,10 @@ attribute vendor_hal_vpp_server;
 attribute vendor_hal_hexlp;
 attribute vendor_hal_hexlp_client;
 attribute vendor_hal_hexlp_server;
+
+attribute vendor_hal_unsignedhexlp;
+attribute vendor_hal_unsignedhexlp_client;
+attribute vendor_hal_unsignedhexlp_server;
 
 attribute vendor_hal_qconfig;
 attribute vendor_hal_qconfig_client;
@@ -364,6 +366,11 @@ attribute vendor_syshealthmon;
 attribute vendor_syshealthmon_client;
 attribute vendor_syshealthmon_server;
 
+# for BHS
+attribute vendor_hal_bhs;
+attribute vendor_hal_bhs_client;
+attribute vendor_hal_bhs_server;
+
 attribute vendor_hal_c2pa;
 attribute vendor_hal_c2pa_client;
 attribute vendor_hal_c2pa_server;
@@ -376,6 +383,37 @@ attribute vendor_hal_qvirtvendor_server;
 attribute vendor_hal_snapx_service_qti;
 attribute vendor_hal_snapx_service_qti_client;
 attribute vendor_hal_snapx_service_qti_server;
+
+attribute vendor_hal_imsvthal;
+attribute vendor_hal_imsvthal_client;
+attribute vendor_hal_imsvthal_server;
+
+# smcloader HAL
+attribute vendor_hal_smcloader;
+attribute vendor_hal_smcloader_client;
+attribute vendor_hal_smcloader_server;
+
+#attributes for AVF QCVM Manager aidl
+attribute vendor_hal_avf_qcvm_qti;
+attribute vendor_hal_avf_qcvm_qti_client;
+attribute vendor_hal_avf_qcvm_qti_server;
+
+# attributes for vendor_framework_utils_app
+attribute vendor_framework_utils_app;
+attribute vendor_framework_utils_app_client;
+attribute vendor_framework_utils_app_server;
+
+# attribute for hal_nordic
+attribute vendor_hal_nordic_client;
+attribute vendor_hal_nordic_server;
+attribute vendor_hal_nordic;
+
+attribute vendor_calib_file_type;
+
+#attributes for aks gamepad hal
+attribute hal_gamepad;
+attribute hal_gamepad_client;
+attribute hal_gamepad_server;
 
 # For BluetoothFmd
 attribute vendor_hal_bluetooth_fmd;
@@ -404,7 +442,12 @@ attribute vendor_hal_qrsloader;
 attribute vendor_hal_qrsloader_client;
 attribute vendor_hal_qrsloader_server;
 
-#attributes for aks gamepad hal
-attribute hal_gamepad;
-attribute hal_gamepad_client;
-attribute hal_gamepad_server;
+# PowerState Service
+attribute vendor_hal_powerstateservice;
+attribute vendor_hal_powerstateservice_client;
+attribute vendor_hal_powerstateservice_server;
+
+# PowerState Utility
+attribute vendor_hal_powerstateutility;
+attribute vendor_hal_powerstateutility_client;
+attribute vendor_hal_powerstateutility_server;
