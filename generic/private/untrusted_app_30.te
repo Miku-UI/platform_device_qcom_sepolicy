@@ -31,6 +31,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 qesdk_app_access(untrusted_app_30);
+# backward compatibility for older targets with android 17
 hal_client_domain(untrusted_app_30, vendor_hal_qspmhal)
 
 # allow app to be a client of DSP HAL
@@ -38,3 +39,12 @@ hal_client_domain(untrusted_app_30, vendor_hal_dspmanager)
 
 # allow app to be a client of AKS Gamepad HAL
 hal_client_domain(untrusted_app_30, hal_gamepad)
+
+# allow 3rd party app to access unsigned Hexlp service
+hal_client_domain(untrusted_app_30, vendor_hal_unsignedhexlp)
+
+# Allow access to FDs owned by Hexlp service
+allow untrusted_app_30 vendor_hal_hexlp_server:fd use;
+
+# allow 3-pty process access to snapx aidl
+hal_client_domain(untrusted_app_30, vendor_hal_snapx_service_qti)

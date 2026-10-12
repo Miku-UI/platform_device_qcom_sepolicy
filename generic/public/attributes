@@ -24,12 +24,9 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
-# Changes from Qualcomm Innovation Center are provided under the following license:
-#
-# Copyright (c) 2022-2024 Qualcomm Innovation Center, Inc. All rights reserved.
+# Changes from Qualcomm Technologies, Inc. are provided under the following license:
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
-#
 
 attribute vendor_hal_hbtp;
 attribute vendor_hal_hbtp_client;
@@ -102,14 +99,15 @@ attribute vendor_hal_spu;
 attribute vendor_hal_spu_client;
 attribute vendor_hal_spu_server;
 
-attribute vendor_hal_qspmhal;
-attribute vendor_hal_qspmhal_client;
-attribute vendor_hal_qspmhal_server;
-
 #attributes for qesdhal
 attribute vendor_hal_qesdhal;
 attribute vendor_hal_qesdhal_client;
 attribute vendor_hal_qesdhal_server;
+
+# backward compatibility for older targets with android 17
+attribute vendor_hal_qspmhal;
+attribute vendor_hal_qspmhal_client;
+attribute vendor_hal_qspmhal_server;
 
 attribute vendor_hal_btconfigstore;
 attribute vendor_hal_btconfigstore_client;
@@ -182,6 +180,10 @@ attribute vendor_hal_vpp_server;
 attribute vendor_hal_hexlp;
 attribute vendor_hal_hexlp_client;
 attribute vendor_hal_hexlp_server;
+
+attribute vendor_hal_unsignedhexlp;
+attribute vendor_hal_unsignedhexlp_client;
+attribute vendor_hal_unsignedhexlp_server;
 
 attribute vendor_hal_qconfig;
 attribute vendor_hal_qconfig_client;
@@ -256,6 +258,10 @@ attribute vendor_hal_limits_server;
 attribute vendor_hal_poweroptservice;
 attribute vendor_hal_poweroptservice_client;
 attribute vendor_hal_poweroptservice_server;
+
+attribute vendor_hal_mpamservice;
+attribute vendor_hal_mpamservice_client;
+attribute vendor_hal_mpamservice_server;
 
 attribute vendor_hal_dpmapiservice_qti;
 attribute vendor_hal_dpmapiservice_qti_client;
@@ -364,6 +370,11 @@ attribute vendor_syshealthmon;
 attribute vendor_syshealthmon_client;
 attribute vendor_syshealthmon_server;
 
+# for BHS
+attribute vendor_hal_bhs;
+attribute vendor_hal_bhs_client;
+attribute vendor_hal_bhs_server;
+
 attribute vendor_hal_c2pa;
 attribute vendor_hal_c2pa_client;
 attribute vendor_hal_c2pa_server;
@@ -376,6 +387,40 @@ attribute vendor_hal_qvirtvendor_server;
 attribute vendor_hal_snapx_service_qti;
 attribute vendor_hal_snapx_service_qti_client;
 attribute vendor_hal_snapx_service_qti_server;
+
+attribute vendor_hal_imsvthal;
+attribute vendor_hal_imsvthal_client;
+attribute vendor_hal_imsvthal_server;
+
+# smcloader HAL
+attribute vendor_hal_smcloader;
+attribute vendor_hal_smcloader_client;
+attribute vendor_hal_smcloader_server;
+
+#attributes for AVF QCVM Manager aidl
+attribute vendor_hal_avf_qcvm_qti;
+attribute vendor_hal_avf_qcvm_qti_client;
+attribute vendor_hal_avf_qcvm_qti_server;
+
+# attributes for vendor_framework_utils_app
+attribute vendor_framework_utils_app;
+attribute vendor_framework_utils_app_client;
+attribute vendor_framework_utils_app_server;
+
+#attributes for qnextgenhal
+attribute vendor_hal_qnextgenhal;
+attribute vendor_hal_qnextgenhal_client;
+attribute vendor_hal_qnextgenhal_server;
+
+#attributes for display_capture_service
+attribute vendor_hal_display_capture_service_qti;
+attribute vendor_hal_display_capture_service_qti_client;
+attribute vendor_hal_display_capture_service_qti_server;
+
+#Ambient Data Service HAL
+attribute vendor_hal_ambient_data;
+attribute vendor_hal_ambient_data_client;
+attribute vendor_hal_ambient_data_server;
 
 # For BluetoothFmd
 attribute vendor_hal_bluetooth_fmd;
